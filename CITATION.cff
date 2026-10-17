@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the article below."
 title: "Error Mitigation Only Moves a Ridge: code and data"
 type: software
+doi: 10.5281/zenodo.23441661
+repository-code: "https://github.com/iatultripathi/qsvm-mitigation-ridge"
 license: MIT
 authors:
   - family-names: Tripathi

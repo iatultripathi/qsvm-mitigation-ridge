@@ -4,6 +4,7 @@ Code, configurations, raw results, figures, tables and IBM hardware counts for t
 *"Error Mitigation Only Moves a Ridge: An Exact Analysis of Quantum-Kernel Support Vector Machines Under Noise and
 Finite Shots"* by A. Tripathi, A. Rasool, N. Khare and M. K. Jhariya (IEEE Access, under review).
 License: MIT (see `LICENSE`). How to cite: see `CITATION.cff`.
+Archived version: [doi:10.5281/zenodo.23441661](https://doi.org/10.5281/zenodo.23441661).
 
 Quick start: `pip install -r requirements.txt`, then open `noise_aware_qsvm_research.ipynb` (benchmark), or run
 the revision scripts listed below. Hardware scripts and the IBM `ibm_fez` counts with job IDs are in `hardware/`.
