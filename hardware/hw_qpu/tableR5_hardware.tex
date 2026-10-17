@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\caption{Hardware check on ibm\_fez (3 splits of breast cancer, N$_{train}$=30, physical qubits [0, 1, 2, 3]): estimated survival $\hat\Lambda$, hidden ridge $\hat r$, Corollary~1 relative decision difference, and balanced accuracy of the raw and mitigated device kernels (C tuned by 5-fold CV + validation; the noise-free ideal kernel is tuned the same way), with the RBF-SVM reference.}
+\label{tab:hardware}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{rrrrrrrrr}
+\toprule
+Split & Shots & $\hat\Lambda$ & $\hat r$ & Cor.~1 diff. & Raw & Mitigated & Ideal QSVM & RBF \\
+\midrule
+5000 & 256 & 0.929 & 0.071 & 8.6e-09 & 0.830 & 0.701 & 0.974 & 0.974 \\
+5000 & 64 & 0.929 & 0.071 & 3.3e-08 & 0.837 & 0.837 & 0.974 & 0.974 \\
+5001 & 256 & 0.930 & 0.070 & 4.8e-08 & 0.656 & 0.656 & 0.818 & 0.909 \\
+5001 & 64 & 0.925 & 0.076 & 3.3e-08 & 0.701 & 0.701 & 0.818 & 0.909 \\
+5002 & 256 & 0.925 & 0.076 & 5.2e-08 & 0.500 & 0.500 & 0.545 & 0.955 \\
+5002 & 64 & 0.923 & 0.078 & 1.2e-08 & 0.656 & 0.656 & 0.545 & 0.955 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

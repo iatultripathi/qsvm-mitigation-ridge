@@ -1,0 +1,22 @@
+check,passed,blocking,detail
+statevector == dense kron simulation,True,True,max |diff| = 2.25e-16
+NumPy DM simulator == dense Kraus/Pauli (depolarizing),True,True,max |diff| = 4.86e-17
+NumPy DM simulator == dense Kraus/Pauli (thermal),True,True,max |diff| = 2.22e-16
+noise-free Pr[0..0] == |<psi(y)|psi(x)>|^2,True,True,max |diff| = 1.39e-16
+ideal kernel PSD and unit diagonal,True,True,min eig = 7.07e-01
+"k_hat = n/S unbiased, Var = p(1-p)/S",True,True,"max bias 0.0008; var ratio [0.996, 1.008, 1.011, 0.97]"
+largest-remainder allocation sums exactly,True,True,sum=1000
+pilot+Neyman lowers Frobenius MSE on heterogeneous p,True,True,MSE uniform 0.8143 vs Neyman 0.6673
+depolarizing inversion recovers ideal kernel exactly,True,True,max |diff| = 2.66e-15
+SVM decision invariant to kernel scaling (C rescaled) and constant offset,True,True,"max |df| scale 5.8e-08, offset 2.1e-07"
+K + E + r I is PSD when r >= ||E||_2,True,True,"min eig without ridge -0.820, with r=||E||: 1.27e-01"
+noise scale 2*sigma tracks realised ||E||_2 (Gaussian test),True,True,"2 sigma = 0.972, ||E||_2 = 0.946"
+clip/flip/shift produce PSD matrices,True,True,
+scalers/PCA fitted on train only; splits disjoint,True,True,train features standardised exactly; test only approximately (as expected)
+"hidden-ridge identity exact under global depolarizing (SVM(K_raw,C) == SVM(K+rI, ΛC))",True,True,rel. decision diff 1.4e-08 (control without ridge: 0.22)
+AQKA-SVM and margin-Neyman allocations spend exactly the budget,True,True,"AQKA 78400, margin-Neyman 78400, budget 78400"
+Qiskit Aer density matrix == NumPy reference (none),True,False,max |diff| = 4.16e-16
+Qiskit Aer density matrix == NumPy reference (depolarizing),True,False,max |diff| = 6.52e-16
+Qiskit Aer density matrix == NumPy reference (thermal),True,False,max |diff| = 3.61e-16
+circuit == qiskit.circuit.library.ZZFeatureMap (state fidelity),True,False,min fidelity = 1.0000000000
+"Aer shot sampling (with readout error) consistent with Binomial(S, p_exact)",True,False,"z-scores [0.92, -1.3, -1.18, -0.3, 0.58, 0.22]"

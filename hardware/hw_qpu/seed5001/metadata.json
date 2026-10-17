@@ -1,0 +1,37 @@
+{
+  "backend": "ibm_fez",
+  "dry_run": false,
+  "dataset": "breast_cancer",
+  "splits": 2,
+  "n_train": 30,
+  "n_val": 10,
+  "n_test": 30,
+  "shots": 256,
+  "layout": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "reps": 2,
+  "entanglement": "linear",
+  "n_qubits": 4,
+  "angle_scale": 0.2,
+  "job_ids": [
+    "db9sn9fi0auc73915hhg",
+    "db9sn9ni0auc73915hig",
+    "db9sna8c77vs7381v5g0",
+    "db9snani0auc73915hjg",
+    "db9snb424mrc7384him0",
+    "db9snboc77vs7381v5i0",
+    "db9snc0c77vs7381v5ig",
+    "db9snck24mrc7384hio0",
+    "db9snd1gv2cc73e60qlg",
+    "db9sndk24mrc7384hipg",
+    "db9sne0c77vs7381v5l0",
+    "db9snegc77vs7381v5lg"
+  ],
+  "submitted": "2026-10-18 00:55:22",
+  "mean_2q_gates": 21.096774193548388,
+  "finished": "2026-10-18 01:02:19"
+}

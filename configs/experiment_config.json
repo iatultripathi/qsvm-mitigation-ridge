@@ -1,0 +1,150 @@
+{
+  "mode": "FULL",
+  "datasets": [
+    "iris",
+    "wine",
+    "breast_cancer",
+    "synthetic"
+  ],
+  "seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009
+  ],
+  "shots_per_entry": [
+    16,
+    64,
+    256,
+    1024
+  ],
+  "noise_levels": [
+    {
+      "name": "noise-free",
+      "kind": "none",
+      "p1": 0.0,
+      "p2": 0.0,
+      "readout": 0.0,
+      "t1": 5e-05,
+      "t2": 5e-05,
+      "t_1q": 5e-08,
+      "t_2q": 4e-07
+    },
+    {
+      "name": "low",
+      "kind": "depolarizing",
+      "p1": 0.001,
+      "p2": 0.01,
+      "readout": 0.01,
+      "t1": 5e-05,
+      "t2": 5e-05,
+      "t_1q": 5e-08,
+      "t_2q": 4e-07
+    },
+    {
+      "name": "medium",
+      "kind": "depolarizing",
+      "p1": 0.002,
+      "p2": 0.03,
+      "readout": 0.02,
+      "t1": 5e-05,
+      "t2": 5e-05,
+      "t_1q": 5e-08,
+      "t_2q": 4e-07
+    },
+    {
+      "name": "high",
+      "kind": "depolarizing",
+      "p1": 0.005,
+      "p2": 0.06,
+      "readout": 0.04,
+      "t1": 5e-05,
+      "t2": 5e-05,
+      "t_1q": 5e-08,
+      "t_2q": 4e-07
+    },
+    {
+      "name": "thermal (mismatch)",
+      "kind": "thermal",
+      "p1": 0.0,
+      "p2": 0.0,
+      "readout": 0.02,
+      "t1": 4e-05,
+      "t2": 3e-05,
+      "t_1q": 5e-08,
+      "t_2q": 5e-07
+    }
+  ],
+  "n_train": 60,
+  "n_val": 30,
+  "n_test": 60,
+  "n_qubits": 4,
+  "angle_scale": 0.1,
+  "bandwidth_grid": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "pilot_seeds": [
+    100,
+    101,
+    102
+  ],
+  "angle_scale_by_dataset": {
+    "breast_cancer": 0.2,
+    "iris": 0.1,
+    "synthetic": 0.1,
+    "wine": 0.1
+  },
+  "reps": 2,
+  "entanglement": "linear",
+  "C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "ridge_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "rbf_gamma_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    "scale"
+  ],
+  "pilot_fraction": 0.25,
+  "lambda_floor": 0.05,
+  "sv_test_all": true,
+  "hidden_ridge_global_lams": [
+    0.8,
+    0.5,
+    0.25
+  ],
+  "hidden_ridge_shots": [
+    0,
+    1024,
+    64
+  ],
+  "hidden_ridge_C": 1.0,
+  "equivalence_margin": 0.01,
+  "sim_backend": "auto",
+  "sim_chunk": 1500,
+  "out_dir": "noise_aware_qsvm_research",
+  "selection_metric": "balanced_accuracy"
+}

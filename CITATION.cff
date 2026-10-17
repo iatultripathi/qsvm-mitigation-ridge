@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article below."
+title: "Error Mitigation Only Moves a Ridge: code and data"
+type: software
+license: MIT
+authors:
+  - family-names: Tripathi
+    given-names: Atul
+    affiliation: "Maulana Azad National Institute of Technology, Bhopal, India"
+    orcid: "https://orcid.org/0009-0001-1183-4890"
+  - family-names: Rasool
+    given-names: Akhtar
+    affiliation: "Maulana Azad National Institute of Technology, Bhopal, India"
+    orcid: "https://orcid.org/0000-0001-9964-2414"
+  - family-names: Khare
+    given-names: Nilay
+    affiliation: "Maulana Azad National Institute of Technology, Bhopal, India"
+    orcid: "https://orcid.org/0000-0003-0450-9157"
+  - family-names: Jhariya
+    given-names: Mahendra Kumar
+    affiliation: "SRM University-AP, Amaravati, India"
+preferred-citation:
+  type: article
+  title: "Error Mitigation Only Moves a Ridge: An Exact Analysis of Quantum-Kernel Support Vector Machines Under Noise and Finite Shots"
+  authors:
+    - family-names: Tripathi
+      given-names: Atul
+    - family-names: Rasool
+      given-names: Akhtar
+    - family-names: Khare
+      given-names: Nilay
+    - family-names: Jhariya
+      given-names: Mahendra Kumar
+  journal: "IEEE Access"
+  year: 2026
+  notes: "Under review"

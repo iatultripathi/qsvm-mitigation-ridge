@@ -1,0 +1,9 @@
+# Versions found in the environment that produced these results
+# (qiskit / qiskit-aer: None means the NumPy reference simulator was used)
+numpy==2.4.6
+scipy==1.18.0
+pandas==2.3.3
+scikit-learn==1.9.0
+matplotlib==3.11.1
+qiskit==1.2.4
+qiskit-aer==0.17.2

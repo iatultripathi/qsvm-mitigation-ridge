@@ -1,0 +1,20 @@
+,indefinite_before,indefinite_before,indefinite_before,indefinite_before,indefinite_before,psd_after,psd_after,psd_after,psd_after,psd_after
+noise,high,low,medium,noise-free,thermal (mismatch),high,low,medium,noise-free,thermal (mismatch)
+method,,,,,,,,,,
+AQKA-Bernoulli+clip,0.25,0.73125,0.48125,1.0,0.5875,1.0,1.0,1.0,1.0,1.0
+AQKA-SVM+clip,0.41875,0.9125,0.5375,1.0,0.6875,1.0,1.0,1.0,1.0,1.0
+Abl: SV-weighted train alloc,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Abl: no SV-restricted test,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Abl: no mitigation,0.25625,0.73125,0.49375,1.0,0.60625,1.0,1.0,1.0,1.0,1.0
+Abl: no noise-aware ridge,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Abl: ridge c=1 (untuned),1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Abl: uniform shots,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+MarginNeyman+clip (Miroszewski-style approx.),0.3625,0.93125,0.5125,1.0,0.70625,1.0,1.0,1.0,1.0,1.0
+NA-QSVM (proposed),1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+QSVM-clip,0.25625,0.75,0.49375,1.0,0.63125,1.0,1.0,1.0,1.0,1.0
+QSVM-flip,0.25625,0.75,0.49375,1.0,0.63125,1.0,1.0,1.0,1.0,1.0
+QSVM-mitig(avg)+clip,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+QSVM-mitig(split)+clip,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+QSVM-raw,0.25625,0.75,0.49375,1.0,0.63125,0.74375,0.25,0.50625,0.0,0.36875
+QSVM-shift,0.25625,0.75,0.49375,1.0,0.63125,1.0,1.0,1.0,1.0,1.0
+"Variant: shot-saving (SV test, S/entry)",1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0

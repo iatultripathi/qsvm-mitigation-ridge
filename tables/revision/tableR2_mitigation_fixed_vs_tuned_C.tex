@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\centering
+\caption{Effect of global (average) mitigation on balanced accuracy at fixed and validation-tuned $C$ (paired, units = dataset $\times$ seed, 95\% bootstrap CI, TOST margin $\pm0.01$).}
+\label{tab:mitig_fixed_tuned}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Comparison [C setting] & Mean diff. & CI low & CI high & Holm p & TOST p \\
+\midrule
+mitigated - raw [C0.1] & 0.0444 & 0.0228 & 0.0686 & 0.0030 & 0.9963 \\
+mitigated - raw [C1] & -0.0020 & -0.0052 & 0.0011 & 0.2494 & 0.0000 \\
+mitigated - raw [C10] & -0.0117 & -0.0162 & -0.0072 & 0.0000 & 0.7666 \\
+mitigated - raw [C100] & -0.0265 & -0.0338 & -0.0188 & 0.0000 & 0.9999 \\
+mitigated - raw [tuned] & -0.0024 & -0.0058 & 0.0011 & 0.2494 & 0.0001 \\
+mitigated+clip - raw+clip [C0.1] & 0.0441 & 0.0225 & 0.0683 & 0.0133 & 0.9961 \\
+mitigated+clip - raw+clip [C1] & -0.0029 & -0.0065 & 0.0007 & 0.1364 & 0.0002 \\
+mitigated+clip - raw+clip [C10] & -0.0340 & -0.0411 & -0.0266 & 0.0000 & 1.0000 \\
+mitigated+clip - raw+clip [C100] & -0.0544 & -0.0649 & -0.0441 & 0.0000 & 1.0000 \\
+mitigated+clip - raw+clip [tuned] & -0.0008 & -0.0044 & 0.0030 & 0.3502 & 0.0000 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

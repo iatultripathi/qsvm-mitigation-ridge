@@ -1,0 +1,8 @@
+comparison,metric,n_units,mean_diff,median_diff,boot_ci_lo,boot_ci_hi,wins,ties,losses,rank_biserial,p_wilcoxon,p_holm,significant_0.05
+NA-QSVM (proposed) vs Abl: uniform shots,kernel_rel_fro_err,40,0.00012669731702459746,-9.844515863800807e-05,-0.0031164239033124297,0.003421030723891336,20,0,20,-0.01951219512195122,0.9205922683031531,1.0,False
+NA-QSVM (proposed) vs Abl: no noise-aware ridge,kernel_rel_fro_err,40,0.026911796622345323,0.02624717474926279,0.023562797245873526,0.030267109804860266,40,0,0,1.0,1.8189894035458565e-12,1.2732925824820995e-11,True
+NA-QSVM (proposed) vs Abl: no mitigation,kernel_rel_fro_err,40,-0.19984812746413363,-0.20339020686260564,-0.20635379434222081,-0.19309385505002533,0,0,40,-1.0,1.8189894035458565e-12,1.2732925824820995e-11,True
+NA-QSVM (proposed) vs Abl: no SV-restricted test,kernel_rel_fro_err,40,0.0,0.0,0.0,0.0,0,40,0,0.0,1.0,1.0,False
+NA-QSVM (proposed) vs Abl: ridge c=1 (untuned),kernel_rel_fro_err,40,-0.028816971389484126,-0.027897167678029494,-0.032411876979260255,-0.025242889245865575,0,0,40,-1.0,1.8189894035458565e-12,1.2732925824820995e-11,True
+NA-QSVM (proposed) vs Abl: SV-weighted train alloc,kernel_rel_fro_err,40,-0.008731951979829617,-0.00823105819736289,-0.011386804412085262,-0.006113374813496726,5,0,35,-0.8463414634146341,2.535471139708534e-07,1.0141884558834136e-06,True
+"NA-QSVM (proposed) vs Variant: shot-saving (SV test, S/entry)",kernel_rel_fro_err,40,0.0,0.0,0.0,0.0,0,40,0,0.0,1.0,1.0,False

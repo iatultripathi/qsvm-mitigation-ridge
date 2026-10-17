@@ -1,0 +1,58 @@
+{
+  "NA-QSVM (proposed)": {
+    "mitigate": true,
+    "alloc": "neyman",
+    "ridge": "tuned",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Abl: uniform shots": {
+    "mitigate": true,
+    "alloc": "uniform",
+    "ridge": "tuned",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Abl: no noise-aware ridge": {
+    "mitigate": true,
+    "alloc": "neyman",
+    "ridge": "none",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Abl: no mitigation": {
+    "mitigate": false,
+    "alloc": "neyman",
+    "ridge": "tuned",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Abl: no SV-restricted test": {
+    "mitigate": true,
+    "alloc": "neyman",
+    "ridge": "tuned",
+    "sv_test": false,
+    "test_budget": "equal"
+  },
+  "Abl: ridge c=1 (untuned)": {
+    "mitigate": true,
+    "alloc": "neyman",
+    "ridge": "fixed1",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Abl: SV-weighted train alloc": {
+    "mitigate": true,
+    "alloc": "neyman_sv",
+    "ridge": "tuned",
+    "sv_test": true,
+    "test_budget": "equal"
+  },
+  "Variant: shot-saving (SV test, S/entry)": {
+    "mitigate": true,
+    "alloc": "neyman",
+    "ridge": "tuned",
+    "sv_test": true,
+    "test_budget": "per_entry"
+  }
+}

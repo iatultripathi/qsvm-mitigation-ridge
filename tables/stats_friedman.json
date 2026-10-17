@@ -1,0 +1,17 @@
+{
+  "n_blocks": 80,
+  "statistic": 8.859342837539252,
+  "p_value": 0.4503582254291292,
+  "mean_ranks": {
+    "MarginNeyman+clip (Miroszewski-style approx.)": 4.95625,
+    "NA-QSVM (proposed)": 5.075,
+    "QSVM-raw": 5.13125,
+    "QSVM-clip": 5.39375,
+    "QSVM-flip": 5.59375,
+    "QSVM-shift": 5.69375,
+    "QSVM-mitig(split)+clip": 5.75,
+    "QSVM-mitig(avg)+clip": 5.78125,
+    "AQKA-Bernoulli+clip": 5.78125,
+    "AQKA-SVM+clip": 5.84375
+  }
+}
