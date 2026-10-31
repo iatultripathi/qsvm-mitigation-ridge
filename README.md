@@ -1,8 +1,7 @@
 # Error Mitigation Only Moves a Ridge: code and data
 
 Code, configurations, raw results, figures, tables and IBM hardware counts for the article
-*"Error Mitigation Only Moves a Ridge: An Exact Analysis of Quantum-Kernel Support Vector Machines Under Noise and
-Finite Shots"* by A. Tripathi, A. Rasool, N. Khare and M. K. Jhariya (manuscript under review).
+*"Diagonal Error Mitigation in Quantum-Kernel Support Vector Machines Is Equivalent to Ridge Removal: Exact Analysis, Simulation and Hardware Validation"* by A. Tripathi, A. Rasool, N. Khare and L. Kumar (manuscript under review).
 License: MIT (see `LICENSE`). How to cite: see `CITATION.cff`.
 Archived version: [doi:10.5281/zenodo.23441661](https://doi.org/10.5281/zenodo.23441661).
 

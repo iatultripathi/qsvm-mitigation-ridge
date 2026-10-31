@@ -18,12 +18,12 @@ authors:
     given-names: Nilay
     affiliation: "Maulana Azad National Institute of Technology, Bhopal, India"
     orcid: "https://orcid.org/0000-0003-0450-9157"
-  - family-names: Jhariya
-    given-names: Mahendra Kumar
+  - family-names: Kumar
+    given-names: Lalit
     affiliation: "SRM University-AP, Amaravati, India"
 preferred-citation:
   type: article
-  title: "Error Mitigation Only Moves a Ridge: An Exact Analysis of Quantum-Kernel Support Vector Machines Under Noise and Finite Shots"
+  title: "Diagonal Error Mitigation in Quantum-Kernel Support Vector Machines Is Equivalent to Ridge Removal: Exact Analysis, Simulation and Hardware Validation"
   authors:
     - family-names: Tripathi
       given-names: Atul
@@ -31,7 +31,7 @@ preferred-citation:
       given-names: Akhtar
     - family-names: Khare
       given-names: Nilay
-    - family-names: Jhariya
-      given-names: Mahendra Kumar
+    - family-names: Kumar
+      given-names: Lalit
   year: 2026
   notes: "Manuscript under review"
