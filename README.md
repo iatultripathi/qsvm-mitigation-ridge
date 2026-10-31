@@ -2,7 +2,7 @@
 
 Code, configurations, raw results, figures, tables and IBM hardware counts for the article
 *"Error Mitigation Only Moves a Ridge: An Exact Analysis of Quantum-Kernel Support Vector Machines Under Noise and
-Finite Shots"* by A. Tripathi, A. Rasool, N. Khare and M. K. Jhariya (IEEE Access, under review).
+Finite Shots"* by A. Tripathi, A. Rasool, N. Khare and M. K. Jhariya (manuscript under review).
 License: MIT (see `LICENSE`). How to cite: see `CITATION.cff`.
 Archived version: [doi:10.5281/zenodo.23441661](https://doi.org/10.5281/zenodo.23441661).
 
@@ -113,5 +113,7 @@ Seeds: evaluation [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009]; 
 **Friedman test** over 80 blocks: p = 0.45; mean ranks: MarginNeyman+clip (Miroszewski-style approx.) 4.96, NA-QSVM (proposed) 5.08, QSVM-raw 5.13, QSVM-clip 5.39, QSVM-flip 5.59, QSVM-shift 5.69, QSVM-mitig(split)+clip 5.75, QSVM-mitig(avg)+clip 5.78, AQKA-Bernoulli+clip 5.78, AQKA-SVM+clip 5.84
 
 ## Limitations
-Simulation only (parametrised noise, 4 qubits, N = 60 training points); no hardware runs; no claim of quantum advantage;
-novelty must be confirmed with `LITERATURE_CHECKLIST.md`. See Section 14 of the notebook for the full list.
+The v2 benchmark above is simulation only (4 qubits, N = 60). The v3 revision adds scale-up runs (4 qubits with
+N = 200 and 6 qubits with N = 80) and a hardware check on IBM ibm_fez (4 qubits, three splits, see `hardware/`).
+Remaining limits: small qubit counts, one device, illustrative device-like noise models, three seeds in the scale-up;
+no claim of quantum advantage. See Section 14 of the notebook for the full list.
